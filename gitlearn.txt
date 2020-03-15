@@ -1,0 +1,29 @@
+列出配置信息：git config -l
+配置名字：git config --global '用户名'
+配置邮箱：git config --global email
+删除配置：git config --unset user.name
+
+local 项目级
+global 当前用户级
+system 系统级
+
+添加文件：git add 文件/文件夹名
+添加所有：git add .
+
+提交：git commit -m '备注信息'
+查询状态：git status
+删除add的文件：git rm --cached 文件名
+修改对比：git diff 文件名
+撤销提交（保留撤销记录）：git checkout 文件名
+查看版本历史记录：git log
+查看版本操作记录：git reflog
+
+撤销提交（删除版本记录）：git revert 版本号
+
+切换到指定的版本：git reset -hard 版本号
+
+查看版本操作记录：git reflog
+
+添加标签：git tag 标签名
+删除标签：git tag -d 标签名
+到指定标签版本：git reset --hard v1.0
